@@ -7,36 +7,43 @@
 
 body {
     background-color: hsl(218, 23%, 16%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 main {
     background-color: hsl(217, 19%, 24%);
     border-radius: 15px;
-    width: 350px;
-    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 30px;
-    margin: 200px 20px 200px 20px;
+    text-align: center;
+    position: relative;
+   
 }
 
 .advice-num {
-    text-align: center;
-    margin: 10px;
     color: hsl(150, 100%, 66%);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 3px;
+    padding-bottom: 14px;
 }
 
 .advice-content {
-    font-size: 28px;
+    font-size: 18px;
     font-weight:800;
+    color: white;
+    letter-spacing: 1.1px;
+    margin-bottom: 20px;
 }
 
 button {
+    position: absolute;
+    left: 50%;
     background: url(images/icon-dice.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -44,15 +51,20 @@ button {
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
     border: none;
-    position: absolute;
-
-    transform: translateY(-10%);
-    transform: translateX(160%);
+    transform: translateX(-50%);
+    cursor: pointer;
+   
 }
 
 .divider {
-    margin: 20px auto;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        margin: 0 12px;
+        padding: 20px;
+    }
 }
