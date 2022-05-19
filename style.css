@@ -44,10 +44,9 @@ main {
 button {
     position: absolute;
     left: 50%;
-    background: url(images/icon-dice.svg);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 35px;
+    padding: 15px;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
     border: none;
